@@ -4,7 +4,10 @@ public class AlgorithmStudy {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		QuestionOne answerObject = new QuestionOne();
-		answerObject.answer();
+		BaseBallAgent agent = new BaseBallAgent();
+		int[][] question = [[123, 1, 1]]
+		
+		agent.solution();
+		
 	}
 }
