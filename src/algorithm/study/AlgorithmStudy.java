@@ -14,6 +14,10 @@ public class AlgorithmStudy {
 		// System.out.println(question[0].length);
 		
 		agent.solution(question);
+
 		
+		SwimmingPool swimmingAgent = new SwimmingPool();
+		
+		swimmingAgent.solution();		
 	}
 }
