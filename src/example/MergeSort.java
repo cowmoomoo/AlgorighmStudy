@@ -1,7 +1,7 @@
 package example;
 
 /* Java program for Merge Sort */
-class MergeSort 
+public class MergeSort 
 { 
 	// Merges two subarrays of arr[]. 
 	// First subarray is arr[l..m] 
