@@ -1,6 +1,6 @@
 package algorithm.study;
 
-public class QuestionOne {
+public class SwimmingPool {
 	public void test()
 	{
 		System.out.println("hello");
