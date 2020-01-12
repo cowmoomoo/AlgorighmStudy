@@ -1,5 +1,7 @@
 package algorithmStudy.week7;
 
+import java.util.Arrays;
+
 public class SeoulGyeongsan {
 	public int solution(int K, int[][] travel) {
         int answer = 0;
@@ -12,7 +14,7 @@ public class SeoulGyeongsan {
         for(int i = 1; i < pathLength; i++) {
         	
         	for (int j = 0; j <= K ; j ++){
-        		// 이 부분 빼면 오류 why???
+        		// 
         		if (dp[i-1][j] == 0)
                     continue;
         		if (j + travel[i][0] <= K) {
