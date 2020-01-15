@@ -70,5 +70,6 @@ public class StudyPresenter{
 		
 		int num = random.nextInt(nameList.length);
 		System.out.println(nameList[num]);
+		scn.close();
 	}
 }

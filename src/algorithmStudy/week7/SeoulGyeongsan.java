@@ -1,7 +1,5 @@
 package algorithmStudy.week7;
 
-import java.util.Arrays;
-
 public class SeoulGyeongsan {
 	public int solution(int K, int[][] travel) {
         int answer = 0;
