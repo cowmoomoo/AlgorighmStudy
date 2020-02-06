@@ -17,6 +17,7 @@ public class MockExam {
 		
 		for(int idx =0, length = answers.length; idx < length; idx ++) {
 			int check = answers[idx];
+			
 			if(check == pattern1[idx % numOfPattern1])
 				score[0] += 1;
 			if(check == pattern2[idx % numOfPattern2])

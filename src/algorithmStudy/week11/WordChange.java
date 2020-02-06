@@ -6,6 +6,7 @@ import java.util.Queue;
 class wordInfo{
 	String word;
 	int step;
+	
 	wordInfo(String word, int step){
 		this.word = word;
 		this.step = step;
@@ -60,6 +61,7 @@ public class WordChange {
 	    
 	    while(!q.isEmpty()) {
 	    	wordInfo currentWordInfo = q.poll();
+	    	
 	    	if(currentWordInfo.word.equals(target)) {
 	    		answer = currentWordInfo.step;
 	    		break;

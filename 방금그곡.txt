@@ -1,0 +1,38 @@
+class Solution {
+  public String solution(String m, String[] musicinfos) {
+      String answer = "";
+      int numOfMusics = musicinfos.length;
+      String[] patterns = new String[numOfMusics];
+      int[] playtimes = new int[numOfMusics];
+      String[] musicName = new String[numOfMusics];
+      
+      for(int i = 0; i < numOfMusics; i++){
+          String[] musicInfo = musicinfos[i].split(",");
+          musicName[i] = musicInfo[2];
+          playtimes[i] = Integer.parseInt(musicInfo[1].split(":")[1]) - Integer.parseInt(musicInfo[0].split(":")[1]);
+          String temp = musicInfo[3];
+          // System.out.println(temp);
+          
+          int repeat = playtimes[i] / temp.length();
+          int repeatRemainder = playtimes[i] % temp.length();
+          if(repeat >=1){
+              patterns[i] = temp;
+              for(int j = 1; j < repeat; j++){
+              patterns[i].concat(temp);
+              }
+          } else
+              patterns[i] = "";
+          patterns[i].concat(temp.substring(0, repeatRemainder));
+          
+          System.out.println(patterns[i]);
+      }
+      int playtime = 0;
+      for(int i = 0; i < numOfMusics; i ++){
+          if(patterns[i].contains(m) && playtime < playtimes[i]){
+              playtime = playtimes[i];
+              answer = musicName[i];
+          }
+      }
+      return answer;
+  }
+}
