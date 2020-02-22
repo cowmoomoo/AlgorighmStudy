@@ -46,6 +46,7 @@ public class SecretMap {
 			}
 			answer[i] = decodingLine;
 		}
+		
 		//System.out.println(Arrays.toString(answer));
 		return answer;
 	}
